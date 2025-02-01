@@ -18,6 +18,10 @@ defmodule Aoc.DayTwo.PartOneTest do
     assert is_safe?("1 2 2 3 4") == false
   end
 
+  test "0 diff report is unsafe" do
+    assert is_safe?("1 2 2 3 4") == false
+  end
+
   test "Inversion is unsafe" do
     assert is_safe?("1 2 3 2 4") == false
   end
